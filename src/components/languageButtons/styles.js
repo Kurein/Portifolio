@@ -9,9 +9,6 @@ export const Container = styled.div`
   @media ${screenSizes.tablet} {
     width: 10em;
   }
-  @media ${screenSizes.laptop} {
-    width: 12em;
-  }
   @media ${screenSizes.ultrawide} {
     width: 20em;
   }

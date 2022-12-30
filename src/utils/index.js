@@ -7,10 +7,13 @@ export const screenSizes = {
 
 export const colors = {
   golden: "#FFD700",
+  golden50: "#FFD70050",
   darkGolden: "#998100",
-  lightGolden: "#E5CF5B",
   darkGolden50: "#99810050",
+  lightGolden: "#E5CF5B",
   lightGolden50: "#E5CF5B50",
+  gray: "#A3A3A3",
   black: "#191919",
+  black80: "#19191980",
   white: "#E5E5E5",
 };

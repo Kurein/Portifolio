@@ -1,18 +1,18 @@
 import { useGlobalState } from "./state";
-
-import LanguageButtons from "./components/languageButtons";
+import HamburgerMenu from "./components/hamburgerMenu";
+import { Container } from "./styles";
 
 function App() {
   return (
-    <div>
-      <LanguageButtons />
-
+    <Container>
+      <HamburgerMenu />
       {useGlobalState("language")[0] === "pt" ? (
         <h1>Ola Mundo</h1>
       ) : (
         <h1>Hello World</h1>
       )}
-    </div>
+      <a href="/pages">pages</a>
+    </Container>
   );
 }
 
