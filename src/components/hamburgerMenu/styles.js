@@ -17,7 +17,8 @@ export const MenuContainer = styled.div`
   background-color: ${colors.black80};
   height: 100%;
   width: 100%;
-  position: absolute;
+  position: fixed;
+  top: 0%;
 `;
 
 export const Menu = styled.div`
@@ -26,6 +27,7 @@ export const Menu = styled.div`
   position: absolute;
   background-color: ${colors.gray};
   right: 0px;
+  top: 0%;
   @media ${screenSizes.tablet} {
     width: 50%;
   }

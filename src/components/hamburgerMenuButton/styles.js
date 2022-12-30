@@ -2,8 +2,16 @@ import styled from "styled-components";
 import { useGlobalState } from "../../state";
 import { colors } from "../../utils";
 
+export const MenuFixedBar = styled.div`
+  position: fixed;
+  width: 100%;
+  height: 7%;
+  top: 0%;
+  background-color: ${colors.darkgray};
+`;
+
 export const Container = styled.div`
-  position: absolute;
+  position: fixed;
   right: 5%;
   top: 2%;
   :hover {
