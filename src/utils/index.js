@@ -9,6 +9,8 @@ export const colors = {
   golden: "#FFD700",
   darkGolden: "#998100",
   lightGolden: "#E5CF5B",
+  darkGolden50: "#99810050",
+  lightGolden50: "#E5CF5B50",
   black: "#191919",
   white: "#E5E5E5",
 };
