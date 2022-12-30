@@ -1,12 +1,14 @@
-import { Container, DivLine } from "./styles";
+import { MenuFixedBar, Container, DivLine } from "./styles";
 
 function HamburgerMenuButton() {
   return (
-    <Container>
-      <DivLine />
-      <DivLine />
-      <DivLine />
-    </Container>
+    <MenuFixedBar>
+      <Container>
+        <DivLine />
+        <DivLine />
+        <DivLine />
+      </Container>
+    </MenuFixedBar>
   );
 }
 
