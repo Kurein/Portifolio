@@ -1,13 +1,16 @@
 import { MenuFixedBar, Container, DivLine } from "./styles";
+import { setGlobalState } from "../../state";
 
-function HamburgerMenuButton() {
+function HamburgerMenuButton({ state }) {
   return (
     <MenuFixedBar>
-      <Container>
-        <DivLine />
-        <DivLine />
-        <DivLine />
-      </Container>
+      <div onClick={() => setGlobalState("hamburgerMenu", state)}>
+        <Container>
+          <DivLine />
+          <DivLine />
+          <DivLine />
+        </Container>
+      </div>
     </MenuFixedBar>
   );
 }

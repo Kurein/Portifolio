@@ -7,10 +7,7 @@ export const Container = styled.div`
     display: none;
   }
 `;
-
-export const HamburgerButtonContainer = styled.div`
-  display: ${() => (useGlobalState("hamburgerMenu")[0] ? "none" : "block")};
-`;
+export const ButtonsContainer = styled.div``;
 
 export const MenuContainer = styled.div`
   display: ${() => (useGlobalState("hamburgerMenu")[0] ? "block" : "none")};

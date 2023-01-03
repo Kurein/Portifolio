@@ -5,10 +5,10 @@ import { colors, screenSizes } from "../../utils";
 export const Container = styled.div`
   display: flex;
   width: 8em;
+  position: fixed;
+  top: 0.5%;
+  left: 3%;
 
-  @media ${screenSizes.tablet} {
-    width: 10em;
-  }
   @media ${screenSizes.ultrawide} {
     width: 20em;
   }
@@ -21,9 +21,7 @@ export const PtButton = styled.button`
   }
   border: none;
   background-color: ${() =>
-    useGlobalState("language")[0] === "pt"
-      ? colors.darkGolden50
-      : colors.lightGolden50};
+    useGlobalState("language")[0] === "pt" ? colors.black80 : colors.gray};
   :hover {
     cursor: pointer;
   }
@@ -37,9 +35,7 @@ export const EngButton = styled.button`
   }
   border: none;
   background-color: ${() =>
-    useGlobalState("language")[0] === "en"
-      ? colors.darkGolden50
-      : colors.lightGolden50};
+    useGlobalState("language")[0] === "en" ? colors.black80 : colors.gray};
   :hover {
     cursor: pointer;
   }

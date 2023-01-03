@@ -6,12 +6,6 @@ export const screenSizes = {
 };
 
 export const colors = {
-  golden: "#FFD700",
-  golden50: "#FFD70050",
-  darkGolden: "#998100",
-  darkGolden50: "#99810050",
-  lightGolden: "#E5CF5B",
-  lightGolden50: "#E5CF5B50",
   gray: "#A3A3A3",
   darkgray: "#666666",
   black: "#191919",
