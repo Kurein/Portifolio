@@ -1,26 +1,18 @@
-import { setGlobalState } from "../../state";
 import HamburgerMenuButton from "../hamburgerMenuButton";
-import {
-  Container,
-  HamburgerButtonContainer,
-  MenuContainer,
-  Menu,
-} from "./styles";
+import LanguageButtons from "../languageButtons";
+import { Container, MenuContainer, Menu, ButtonsContainer } from "./styles";
 
 function HamburgerMenu() {
   return (
     <Container>
-      <div onClick={() => setGlobalState("hamburgerMenu", true)}>
-        <HamburgerButtonContainer>
-          <HamburgerMenuButton />
-        </HamburgerButtonContainer>
-      </div>
+      <ButtonsContainer>
+        <HamburgerMenuButton state={true} />
+      </ButtonsContainer>
       <MenuContainer>
         <Menu></Menu>
-        <div onClick={() => setGlobalState("hamburgerMenu", false)}>
-          <HamburgerMenuButton />
-        </div>
+        <HamburgerMenuButton state={false} />
       </MenuContainer>
+      <LanguageButtons />
     </Container>
   );
 }
