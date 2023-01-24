@@ -6,6 +6,7 @@ export const MenuFixedBar = styled.div`
   position: fixed;
   width: 100%;
   height: 7%;
+  min-height: 60px;
   top: 0%;
   background-color: ${colors.darkgray};
 `;

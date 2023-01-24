@@ -22,6 +22,10 @@ export const PtButton = styled.button`
   border: none;
   background-color: ${() =>
     useGlobalState("language")[0] === "pt" ? colors.black80 : colors.gray};
+  @media ${screenSizes.laptop} {
+    background-color: ${() =>
+      useGlobalState("language")[0] === "pt" ? colors.darkgray : colors.gray};
+  }
   :hover {
     cursor: pointer;
   }
@@ -36,6 +40,10 @@ export const EngButton = styled.button`
   border: none;
   background-color: ${() =>
     useGlobalState("language")[0] === "en" ? colors.black80 : colors.gray};
+  @media ${screenSizes.laptop} {
+    background-color: ${() =>
+      useGlobalState("language")[0] === "en" ? colors.darkgray : colors.gray};
+  }
   :hover {
     cursor: pointer;
   }
